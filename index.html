@@ -12,20 +12,9 @@
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-  @keyframes neon-glow {
-    0%, 100% {
-      box-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6;
-    }
-    50% {
-      box-shadow: 0 0 20px #60a5fa, 0 0 30px #60a5fa, 0 0 40px #60a5fa;
-    }
-  }
-
-  .neon-border {
-    animation: neon-glow 2s infinite alternate;
-  }
-</style>
-
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; }
+  </style>
 </head>
 <body class="bg-gradient-to-tr from-sky-50 via-blue-100 to-sky-50 text-gray-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-gray-200">
 
@@ -65,10 +54,9 @@
   <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
     
     <!-- Profile Photo -->
-    <div class="w-48 h-48 mb-6 md:mb-0 md:mr-10 rounded-full overflow-hidden border-4 border-blue-500 neon-border">
-  <img src="iqbal_photo.jpg" alt="Iqbal Shaikh" class="w-full h-full object-cover rounded-full">
-</div>
-
+    <div class="w-48 h-48 mb-6 md:mb-0 md:mr-10 rounded-full overflow-hidden shadow-lg">
+      <img src="iqbal_photo.jpg" alt="Iqbal Shaikh" class="w-full h-full object-cover">
+    </div>
 
     <!-- About Text -->
     <div class="text-center md:text-left">
